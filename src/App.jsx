@@ -1,11 +1,15 @@
-import Hello from './components/Hello'
+import React from "react";
+import Card from './components/Card'
 
 function App() {
-  return (
-      <div className="App">
-        <Hello />
-      </div>
-  );
+    return (
+        <div className="App">
+            <Card  title='Hi' />
+            <Card text='how are you?' />
+            <Card title='Hi'
+                  text='how are you?' />
+        </div>
+    );
 }
 
 export default App;
