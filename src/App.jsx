@@ -1,9 +1,9 @@
-import Hello from './components/Hello'
+import Progress from './components/Progress'
 
 function App() {
   return (
       <div className="App">
-        <Hello />
+        <Progress />
       </div>
   );
 }
