@@ -1,9 +1,9 @@
-import Hello from './components/Hello'
+import BtnGroup from './components/BtnGroup'
 
 function App() {
   return (
-      <div className="App">
-        <Hello />
+      <div>
+        <BtnGroup buttonLeftText="left" buttonMiddleText="middle" buttonRightText="right" isActive={false}/>
       </div>
   );
 }
