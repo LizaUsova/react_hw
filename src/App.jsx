@@ -1,9 +1,9 @@
-import Hello from './components/Hello'
+import MyForm from './components/MyForm'
 
 function App() {
   return (
       <div className="App">
-        <Hello />
+        <MyForm />
       </div>
   );
 }
