@@ -1,9 +1,14 @@
-import Hello from './components/Hello'
+import Card from './components/Card/Card'
 
 function App() {
   return (
       <div className="App">
-        <Hello />
+          <Card>
+              <Card.Body>
+                  <Card.Title title="I'm a title"></Card.Title>
+                  <Card.Text text={"I'm a text"}></Card.Text>
+              </Card.Body>
+          </Card>
       </div>
   );
 }
