@@ -1,9 +1,9 @@
-import Hello from './components/Hello'
+import Log from './components/Log/Log'
 
 function App() {
   return (
-      <div className="App">
-        <Hello />
+      <div>
+        <Log />
       </div>
   );
 }

@@ -1,0 +1,19 @@
+.wrapper {
+  margin-top: 40px;
+  margin-left: 40px;
+  gap: 20px;
+}
+
+.mybtn {
+  width: 60px;
+  color: white;
+  font-weight: bold;
+
+  &_minus {
+    background: red;
+  }
+
+  &_plus {
+    background: green;
+  }
+}
