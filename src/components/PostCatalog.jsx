@@ -2,7 +2,7 @@ import Post from "./Post";
 import {useState, useEffect} from "react";
 import styles from "./style.module.scss";
 
-function Posts() {
+function PostCatalog() {
     const [posts, setPosts] = useState([])
     const [error, setError] = useState('')
     const [isLoading, setIsLoading] = useState(true)
@@ -35,4 +35,4 @@ function Posts() {
     );
 }
 
-export default Posts;
+export default PostCatalog;

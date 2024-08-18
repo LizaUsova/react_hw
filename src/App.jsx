@@ -1,9 +1,9 @@
-import Posts from './components/Posts'
+import PostCatalog from './components/PostCatalog'
 
 function App() {
   return (
       <>
-        <Posts />
+        <PostCatalog />
       </>
   );
 }
