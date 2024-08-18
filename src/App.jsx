@@ -1,10 +1,10 @@
-import Hello from './components/Hello'
+import Posts from './components/Posts'
 
 function App() {
   return (
-      <div className="App">
-        <Hello />
-      </div>
+      <>
+        <Posts />
+      </>
   );
 }
 
