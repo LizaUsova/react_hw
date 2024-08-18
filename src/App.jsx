@@ -1,11 +1,11 @@
-import Hello from './components/Hello'
+import PostCatalog from './components/PostCatalog'
 
 function App() {
-  return (
-      <div className="App">
-        <Hello />
-      </div>
-  );
+    return (
+        <>
+            <PostCatalog />
+        </>
+    );
 }
 
 export default App;

@@ -1,0 +1,25 @@
+.post {
+  max-width: 80%;
+  text-align: center;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  &_title {
+    font-size: 50px;
+    color: blueviolet;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &_list {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.load {
+  text-align: center;
+  font-size: 20px;
+}
