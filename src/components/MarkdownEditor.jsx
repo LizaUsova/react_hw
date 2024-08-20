@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class MarkdownEditor extends Component {
     constructor(props) {
         super(props);
-        this.editorRef = React.createRef(); // Создаем реф для ссылки на DOM-элемент
+        this.editorRef = React.createRef();
     }
 
     componentDidMount() {
