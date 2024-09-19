@@ -1,9 +1,10 @@
-import Hello from './components/Hello'
+import TodoBox from './components/TodoBox';
+
 
 function App() {
   return (
       <div className="App">
-        <Hello />
+        <TodoBox />
       </div>
   );
 }
