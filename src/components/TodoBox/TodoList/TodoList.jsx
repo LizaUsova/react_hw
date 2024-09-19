@@ -1,30 +1,26 @@
 import React from 'react';
 import TodoItem from './../TodoItem';
 
-const TodoList = ({ items, removeTodo, removeAll }) => {
-    const handleRemoveAll = (e) => {
-        e.preventDefault();
-        removeAll();
-    };
-
+const TodoList = ({ items, onRemove, removeAll }) => {
     return (
         <div>
             <div className="mb-3">
                 <form className="d-flex">
                     <button
-                        type="submit"
+                        type="button"
                         className="btn btn-danger"
-                        onClick={handleRemoveAll}>
+                        onClick={removeAll}
+                    >
                         Remove All
                     </button>
                 </form>
             </div>
             <div>
-                {items.map((item, index) => (
+                {items.map((item) => (
                     <TodoItem
-                        key={index}
+                        key={item.id}
                         item={item}
-                        onRemove={() => removeTodo(index)}
+                        onRemove={onRemove}
                     />
                 ))}
             </div>

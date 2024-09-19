@@ -1,3 +1,5 @@
+import React from 'react';
+
 const TodoItem = ({ item, onRemove }) => {
     return (
         <div>
@@ -6,11 +8,12 @@ const TodoItem = ({ item, onRemove }) => {
                     <button
                         type="button"
                         className="btn btn-primary btn-sm"
-                        onClick={onRemove}>
+                        onClick={() => onRemove(item.id)}
+                    >
                         -
                     </button>
                 </div>
-                <div className="col">{item}</div>
+                <div className="col">{item.text}</div>
             </div>
             <hr />
         </div>

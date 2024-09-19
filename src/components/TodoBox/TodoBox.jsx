@@ -1,17 +1,19 @@
-import {useState} from "react";
-import {Button, Col, Container, Row} from "react-bootstrap";
+import { useState } from "react";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import TodoForm from './TodoForm';
 import TodoList from "./TodoList";
+import { uniqueId } from 'lodash';
 
 const TodoBox = () => {
     const [items, setItems] = useState([]);
 
     const addTodoHandler = (text) => {
-        setItems([text, ...items]);
+        const newItem = { id: uniqueId(), text };
+        setItems([newItem, ...items]);
     };
 
-    const removeTodoHandler = (indexToRemove) => {
-        setItems(items.filter((_, index) => index !== indexToRemove));
+    const onRemove = (id) => {
+        setItems(items.filter(item => item.id !== id));
     };
 
     const removeAllHandler = () => {
@@ -29,7 +31,7 @@ const TodoBox = () => {
                     <Col sx={6}>
                         <TodoList
                             items={items}
-                            removeTodo={removeTodoHandler}
+                            onRemove={onRemove}
                             removeAll={removeAllHandler}
                         />
                     </Col>
