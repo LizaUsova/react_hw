@@ -15,8 +15,9 @@ const TodoForm = ({onSubmit}) => {
             description: ''
         },
         validationSchema,
-        onSubmit: async (values, validatedForm) => {
-            onSubmit(values)
+        onSubmit: async (values, {resetForm}) => {
+            await onSubmit(values);
+            resetForm();
         },
     });
 

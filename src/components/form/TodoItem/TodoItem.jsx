@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Button, Card, CardActions, CardContent, Typography} from "@mui/material";
 
-const TodoItem = ({title, body}) => {
+const TodoItem = ({title, body, id, onRemove}) => {
     return (
         <Card >
             <CardContent>
                 <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-                    {title}
+                    {title + ' ' + id}
                 </Typography>
                 <Typography variant="h5" component="div">
                     {body}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small" onClick={() => onRemove({title, body, id})}>Remove</Button>
             </CardActions>
         </Card>
     );
